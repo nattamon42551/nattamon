@@ -1,0 +1,162 @@
+/* ตั้งค่าพื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Tahoma, sans-serif;
+    background-color: #fff0f7;
+    color: #333;
+}
+
+/* ส่วนหัวเว็บไซต์ */
+header {
+    background: linear-gradient(135deg, #ff9acb, #e94b9c);
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+/* เมนูเว็บไซต์ */
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 18px;
+    box-shadow: 0 3px 10px #e8b5d0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #d63384;
+    background-color: #ffe0ef;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* เมื่อเอาเมาส์วางบนปุ่ม */
+nav a:hover {
+    background-color: #d63384;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* หน้าที่กำลังเปิด */
+nav a.active {
+    background-color: #d63384;
+    color: white;
+}
+
+/* เนื้อหา */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* รูปแบนเนอร์ */
+.banner {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.banner img {
+    width: 100%;
+    display: block;
+}
+
+/* กล่องเนื้อหา */
+.content {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px #e9bfd5;
+}
+
+.content h2 {
+    color: #d63384;
+    margin-bottom: 15px;
+}
+
+.content p {
+    line-height: 1.8;
+}
+
+.content ul {
+    padding-left: 25px;
+    line-height: 2;
+}
+
+/* การ์ด */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px #e9bfd5;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #ffe0ef;
+}
+
+.card h3 {
+    color: #d63384;
+    margin-bottom: 12px;
+}
+
+/* ส่วนท้าย */
+footer {
+    background-color: #c72c7c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* รองรับโทรศัพท์ */
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .container {
+        width: 94%;
+    }
+}
